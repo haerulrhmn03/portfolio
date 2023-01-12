@@ -18,34 +18,34 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
+                <a class="nav-link active" aria-current="page" href="#about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Work</a>
+                <a class="nav-link" href="#work">Work</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
             </li>
             </ul>
         </div>
         </div>
     </nav>
     <section id="home" class="home container">
-        <div class="row d-flex align-items-center">
+        <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
             <div class="col-8">
                 <h3 class="fw-semibold">Hi! I am</h3>
                 <h1 class="fw-bold">Haerul Rahman</h1>
                 <p>Saya seorang manusia biasa.</p>
                 <a class="btn button" href="images/haerul.modified.png" download>Resume</a>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
                 <img src="images/haerul.modified.png" alt="Haerul">
             </div>
         </div>
-        <div class=" arrow w-100 d-flex align-items-center flex-column">
-            <a class="text-decoration-none text-dark" href="#about">More info</a>
+        <a  href="#about" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column">
+            <div class="text-dark">More info</div>
             <img id="arrow" class="mt-2" src="images/arrow.svg" alt="arrow">
-        </div>
+        </a>
     </section>
     <section id="about" class="about container">
         <p>Saya seorang web developer pemula yang mempunyai minat di bagian front end developer.</p>
@@ -89,7 +89,7 @@
 
                     Akhirnya pada tanggal 30 April 1993, CERN (laboratorium tempat Tim bekerja) mengumumkan bahwa WWW dapat digunakan secara gratis oleh publik.</p>
             </div>
-            <div class="col work-img">
+            <div class="col-12 col-6 work-img">
                 <div id="work-1" class="work-img-item">
                     <img src="images/work-1.png" alt="work 1" id="work-1">
                 </div>
@@ -105,7 +105,7 @@
     </section>
     <section id="contact" class="contact container">
         <div class="row d-flex align-items-center gap-5">
-            <div class="col">
+            <div class="col-12 col-lg-6">
                 <p>Ku ingat masa kala itu
                     Pertama kali kita bertemu
                     Kupandang engkau tersipu malu
@@ -117,21 +117,21 @@
                     Membuat jantungku berdetak cepat.</p>
                     <div id="row">
                         <div class="col d-flex align-items-center">
-                            <img src="images/Facebook.svg" alt="facebook icon">
-                            <p>Haerul rhmn</p>
+                            <img class="w-20" src="images/Facebook.svg" alt="facebook icon">
+                            <p class="mb-0 ms-2">Haerul rhmn</p>
                         </div>
                         <div class="col d-flex align-items-center">
-                            <img src="images/Instagram.svg" alt="Instagram icon">
-                            <p>@haerul_rahman03</p>
+                            <img class="w-20" src="images/Instagram.svg" alt="Instagram icon">
+                            <p class="mb-0 ms-2">@haerul_rahman03</p>
                         </div>
                         <div class="col d-flex align-items-center">
-                            <img src="images/Twitter.svg" alt="twitter icon">
-                            <p>@MuhamadhaerulR9</p>
+                            <img class="w-20" src="images/Twitter.svg" alt="twitter icon">
+                            <p class="mb-0 ms-2">@MuhamadhaerulR9</p>
                         </div>
                         
                     </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-lg-5">
                 <form class="contact-form" onsubmit="onFormSubmit(event)">
                     <div class="mb-3">
                         <label for="inp_email" class="form-label">Email address</label>

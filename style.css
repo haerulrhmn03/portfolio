@@ -39,13 +39,17 @@ section::before {
     font-size: 48px;
 }
 
+.home img {
+    width: 100%;
+}
+
 .home .arrow img {
-    width: 60px;
+    width: 32px;
 
 }
 
 #arrow {
-    animation: 2s upDown infinite;
+    animation: 3s upDown infinite;
 }
 
 .about::before {
@@ -143,12 +147,25 @@ section::before {
     font-weight: 700;
 }
 
+@media only screen and (max-width: 768px) {
+    .home img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    section::before {
+        left: -10px;
+        font-size: 64px;
+    }
+}
+
 @keyframes upDown {
     0% {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(100px);
+        transform: translateY(24px);
     }
     100% {
         transform: translateY(0);
